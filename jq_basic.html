@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jq basic</title>
+	<meta charset="utf-8" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="jq_basic_arithmetic_binary_add.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function () {
+        $('#submit').click(function () {
+			$('#result').val($('#result').number($('#a1').val()).add($('#a2').val()).number());
+        });
+    });
+	</script>
+</head>
+<body>
+<h2>Test it</h2>
+<p><input value="3" id="a1"><input value="2" id="a2"><hr><div class="right"><button id="submit">+</button></div><input disabled id="result"></p>
+</body>
+</html>
